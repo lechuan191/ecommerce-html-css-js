@@ -16,11 +16,11 @@
             </div>
             <nav>
                 <ul id="menuitem">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Product</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
+                    <li><a href="login.html">Account</a></li>
                 </ul>
             </nav>
             <img src="images/cart.png" alt="" width="30px">
@@ -176,4 +176,21 @@
     </div>
 </body>
 <script src="js/script.js"></script>
+<script>
+    var productimg = document.getElementById("productimg");
+    var smallimg = document.getElementsByClassName("small-img");
+
+    smallimg[0].onclick = function(){
+        productimg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick = function(){
+        productimg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick = function(){
+        productimg.src = smallimg[2].src;
+    }
+    smallimg[3].onclick = function(){
+        productimg.src = smallimg[3].src;
+    }
+</script>
 </html>
